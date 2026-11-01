@@ -1,0 +1,368 @@
+{
+  "base": {
+    "seed": 379893757,
+    "input_columns": [
+      "age",
+      "gender",
+      "region",
+      "city_type",
+      "education",
+      "family_status",
+      "children",
+      "employment",
+      "occupation_risk",
+      "years_with_company",
+      "income",
+      "wealth_segment",
+      "financial_literacy",
+      "credit_score",
+      "payment_discipline",
+      "late_payments",
+      "online_payments_ratio",
+      "average_balance",
+      "loan_amount",
+      "mortgage",
+      "house_value",
+      "car_value",
+      "smartphone_price",
+      "smartphone_age",
+      "bank_products",
+      "life_insurance",
+      "property_insurance",
+      "health_insurance",
+      "travel_insurance",
+      "car_insurance",
+      "gadget_insurance",
+      "cyber_protection",
+      "identity_protection",
+      "insurance_products",
+      "active_policies",
+      "expired_policies",
+      "number_of_claims",
+      "claim_frequency",
+      "average_claim_cost",
+      "fraud_flag",
+      "mobile_app_usage",
+      "internet_activity",
+      "digital_behavior_score",
+      "password_manager",
+      "two_factor_auth",
+      "security_training",
+      "website_visits",
+      "mobile_sessions",
+      "days_since_last_login",
+      "days_since_last_policy",
+      "call_center_contacts",
+      "customer_loyalty",
+      "marketing_response",
+      "risk_tolerance",
+      "health_index",
+      "regional_risk",
+      "crime_rate",
+      "natural_disaster_risk",
+      "cyber_risk"
+    ],
+    "categorical_features": [
+      "region",
+      "city_type",
+      "gender",
+      "education",
+      "family_status",
+      "employment",
+      "wealth_segment"
+    ],
+    "members": [
+      {
+        "factory_name": "lgb_featurebag",
+        "seed": 356220533,
+        "file": "lgb_featurebag.joblib",
+        "weight": 0.25,
+        "bag_members": 15,
+        "diversity": "rows85"
+      },
+      {
+        "factory_name": "hgb_featurebag",
+        "seed": 928098952,
+        "file": "hgb_featurebag.joblib",
+        "weight": 0.75,
+        "bag_members": 15,
+        "diversity": "rows85"
+      }
+    ]
+  },
+  "catboost": {
+    "input_columns": [
+      "age",
+      "gender",
+      "region",
+      "city_type",
+      "education",
+      "family_status",
+      "children",
+      "employment",
+      "occupation_risk",
+      "years_with_company",
+      "income",
+      "wealth_segment",
+      "financial_literacy",
+      "credit_score",
+      "payment_discipline",
+      "late_payments",
+      "online_payments_ratio",
+      "average_balance",
+      "loan_amount",
+      "mortgage",
+      "house_value",
+      "car_value",
+      "smartphone_price",
+      "smartphone_age",
+      "bank_products",
+      "life_insurance",
+      "property_insurance",
+      "health_insurance",
+      "travel_insurance",
+      "car_insurance",
+      "gadget_insurance",
+      "cyber_protection",
+      "identity_protection",
+      "insurance_products",
+      "active_policies",
+      "expired_policies",
+      "number_of_claims",
+      "claim_frequency",
+      "average_claim_cost",
+      "fraud_flag",
+      "mobile_app_usage",
+      "internet_activity",
+      "digital_behavior_score",
+      "password_manager",
+      "two_factor_auth",
+      "security_training",
+      "website_visits",
+      "mobile_sessions",
+      "days_since_last_login",
+      "days_since_last_policy",
+      "call_center_contacts",
+      "customer_loyalty",
+      "marketing_response",
+      "risk_tolerance",
+      "health_index",
+      "regional_risk",
+      "crime_rate",
+      "natural_disaster_risk",
+      "cyber_risk"
+    ],
+    "categorical_features": [
+      "region",
+      "city_type",
+      "gender",
+      "education",
+      "family_status",
+      "employment",
+      "wealth_segment"
+    ],
+    "models": [
+      {
+        "file": "reference_00.cbm",
+        "group": "reference",
+        "seed": 1276869844,
+        "weight": 0.05,
+        "parameters": {
+          "iterations": 298,
+          "learning_rate": 0.05,
+          "depth": 7,
+          "l2_leaf_reg": 3,
+          "boosting_type": "Plain"
+        }
+      },
+      {
+        "file": "reference_01.cbm",
+        "group": "reference",
+        "seed": 523674799,
+        "weight": 0.05,
+        "parameters": {
+          "iterations": 298,
+          "learning_rate": 0.05,
+          "depth": 7,
+          "l2_leaf_reg": 3,
+          "boosting_type": "Plain"
+        }
+      },
+      {
+        "file": "reference_02.cbm",
+        "group": "reference",
+        "seed": 377982604,
+        "weight": 0.05,
+        "parameters": {
+          "iterations": 298,
+          "learning_rate": 0.05,
+          "depth": 7,
+          "l2_leaf_reg": 3,
+          "boosting_type": "Plain"
+        }
+      },
+      {
+        "file": "reference_03.cbm",
+        "group": "reference",
+        "seed": 1424856895,
+        "weight": 0.05,
+        "parameters": {
+          "iterations": 298,
+          "learning_rate": 0.05,
+          "depth": 7,
+          "l2_leaf_reg": 3,
+          "boosting_type": "Plain"
+        }
+      },
+      {
+        "file": "reference_04.cbm",
+        "group": "reference",
+        "seed": 1736430195,
+        "weight": 0.05,
+        "parameters": {
+          "iterations": 298,
+          "learning_rate": 0.05,
+          "depth": 7,
+          "l2_leaf_reg": 3,
+          "boosting_type": "Plain"
+        }
+      },
+      {
+        "file": "reference_05.cbm",
+        "group": "reference",
+        "seed": 62701618,
+        "weight": 0.05,
+        "parameters": {
+          "iterations": 298,
+          "learning_rate": 0.05,
+          "depth": 7,
+          "l2_leaf_reg": 3,
+          "boosting_type": "Plain"
+        }
+      },
+      {
+        "file": "reference_06.cbm",
+        "group": "reference",
+        "seed": 1948768614,
+        "weight": 0.05,
+        "parameters": {
+          "iterations": 298,
+          "learning_rate": 0.05,
+          "depth": 7,
+          "l2_leaf_reg": 3,
+          "boosting_type": "Plain"
+        }
+      },
+      {
+        "file": "reference_07.cbm",
+        "group": "reference",
+        "seed": 886493813,
+        "weight": 0.05,
+        "parameters": {
+          "iterations": 298,
+          "learning_rate": 0.05,
+          "depth": 7,
+          "l2_leaf_reg": 3,
+          "boosting_type": "Plain"
+        }
+      },
+      {
+        "file": "reference_08.cbm",
+        "group": "reference",
+        "seed": 1938884899,
+        "weight": 0.05,
+        "parameters": {
+          "iterations": 298,
+          "learning_rate": 0.05,
+          "depth": 7,
+          "l2_leaf_reg": 3,
+          "boosting_type": "Plain"
+        }
+      },
+      {
+        "file": "reference_09.cbm",
+        "group": "reference",
+        "seed": 1650418525,
+        "weight": 0.05,
+        "parameters": {
+          "iterations": 298,
+          "learning_rate": 0.05,
+          "depth": 7,
+          "l2_leaf_reg": 3,
+          "boosting_type": "Plain"
+        }
+      },
+      {
+        "file": "ordered_00.cbm",
+        "group": "ordered",
+        "seed": 1157503871,
+        "weight": 0.1,
+        "parameters": {
+          "iterations": 350,
+          "learning_rate": 0.05,
+          "depth": 7,
+          "l2_leaf_reg": 3,
+          "boosting_type": "Ordered"
+        }
+      },
+      {
+        "file": "ordered_01.cbm",
+        "group": "ordered",
+        "seed": 612467209,
+        "weight": 0.1,
+        "parameters": {
+          "iterations": 350,
+          "learning_rate": 0.05,
+          "depth": 7,
+          "l2_leaf_reg": 3,
+          "boosting_type": "Ordered"
+        }
+      },
+      {
+        "file": "ordered_02.cbm",
+        "group": "ordered",
+        "seed": 806899766,
+        "weight": 0.1,
+        "parameters": {
+          "iterations": 350,
+          "learning_rate": 0.05,
+          "depth": 7,
+          "l2_leaf_reg": 3,
+          "boosting_type": "Ordered"
+        }
+      },
+      {
+        "file": "ordered_03.cbm",
+        "group": "ordered",
+        "seed": 679983943,
+        "weight": 0.1,
+        "parameters": {
+          "iterations": 350,
+          "learning_rate": 0.05,
+          "depth": 7,
+          "l2_leaf_reg": 3,
+          "boosting_type": "Ordered"
+        }
+      },
+      {
+        "file": "ordered_04.cbm",
+        "group": "ordered",
+        "seed": 459542440,
+        "weight": 0.1,
+        "parameters": {
+          "iterations": 350,
+          "learning_rate": 0.05,
+          "depth": 7,
+          "l2_leaf_reg": 3,
+          "boosting_type": "Ordered"
+        }
+      }
+    ]
+  },
+  "variants": {
+    "hgb75": {
+      "seed": 995605796,
+      "catboost_weight": 0.1
+    }
+  }
+}

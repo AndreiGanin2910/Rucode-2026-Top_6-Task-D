@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Local data and generated predictions
+data/
+submissions*/
+retrained_weights/
+*.csv
+*.zip
+*.log
+catboost_info/
+
+# System files
+.DS_Store
+Thumbs.db
